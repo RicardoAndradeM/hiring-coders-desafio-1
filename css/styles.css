@@ -10,6 +10,7 @@ body {
     background-color: #000000;
 }
 
+/*header*/
 header {
     display: flex;
     flex-direction: column;
@@ -22,7 +23,6 @@ header {
 .logo {
     width: 100px;
     height: auto;
-    margin: 5px 0;
     background-color: #ffffff;
     padding: 2px 15px;
     border-radius: 10px;
@@ -31,12 +31,12 @@ header {
 .nav-bar {
     margin: 10px 0;
     padding: 10px 0;
-    border-bottom: solid 1px #ffffff;
 }
 
 .menu {
     display: flex;
     flex-wrap: nowrap;
+    border-bottom: solid 1px #ffffff;
 }
 
 .menu-item {
@@ -163,4 +163,39 @@ footer {
 .footer-text {
     margin: 0 10px;
     color: #000000;
+}
+
+/*interface para pc*/
+@media (min-width: 1024px) {
+  header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .logo {
+        margin: 10px;
+  }
+  
+  .nav-bar {
+      display: flex;
+      justify-content: flex-end;
+  }
+
+  .section-one {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+  .section-one-block-one, .section-one-block-two {
+      height: 80vh;
+  }
+
+  .section-two {
+      height: 90vh;
+  }
+  footer {
+      height: 10vh;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+  }
 }
