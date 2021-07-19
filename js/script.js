@@ -3,7 +3,7 @@ const form = document.getElementById('form');
 form.addEventListener('submit', e => {
     e.preventDefault();
     const carregando = `<p>Carregando...</p>`;
-    const concluido = '<p>Cadastrado sucesso! =)</p>';
+    const concluido = '<p>Cadastrado com sucesso! =)</p>';
     //adiquirindo dados
     const formCotainer = document.getElementById('cotainer-singup');
     const userName = document.getElementById('name');
